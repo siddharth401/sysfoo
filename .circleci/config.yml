@@ -3,6 +3,6 @@ jobs:
   build:
     docker:
       - image: circleci/sysfoo
-     steps:    
-       - checkout:
-       - run: mv target/*.war $CIRCLE_ARTIFACTS/
+    steps:    
+      - checkout:
+      - run: mv target/*.war $CIRCLE_ARTIFACTS/
