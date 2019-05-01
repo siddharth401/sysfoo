@@ -1,8 +1,10 @@
 version :2
-
-test:
+jobs:
+  build:
+  -image: circleci/sysfoo
+  
   override:
     - mvn package
-
+ checkout:
   post:
     - mv target/*.war $CIRCLE_ARTIFACTS/
