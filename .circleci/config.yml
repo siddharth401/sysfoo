@@ -3,8 +3,6 @@ jobs:
   build:
     docker:
       - image: circleci/sysfoo
-  override:
-    - mvn package
 steps:    
    - checkout:
    - run: mv target/*.war $CIRCLE_ARTIFACTS/
