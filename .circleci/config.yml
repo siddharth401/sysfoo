@@ -1,7 +1,4 @@
-version :2
-jobs:
-  build:
-  -image: circleci/sysfoo
+version : 2
   
   override:
     - mvn package
