@@ -5,6 +5,6 @@ jobs:
       - image: circleci/sysfoo
   override:
     - mvn package
- checkout:
-   post:
-    - mv target/*.war $CIRCLE_ARTIFACTS/
+steps:    
+   - checkout:
+   - run: mv target/*.war $CIRCLE_ARTIFACTS/
